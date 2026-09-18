@@ -1,0 +1,1484 @@
+{
+  "data_type": "SYNTHETIC DEMO",
+  "seed": 1027,
+  "frame_duration_ms": 120,
+  "playback_is_not_throughput": true,
+  "frames": [
+    {
+      "frame": 1,
+      "case": "valid",
+      "target": [
+        0.79,
+        0.5973545855771626
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.7924083761730243,
+        0.605455926705255
+      ],
+      "timestamp_us": 120000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        12.046439628482972,
+        10.93610251117991
+      ],
+      "right_feature": [
+        9.89744254363228,
+        9.467340590979788
+      ]
+    },
+    {
+      "frame": 2,
+      "case": "valid",
+      "target": [
+        0.7884113496567993,
+        0.6431019914550921
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.7937386844949293,
+        0.6290438413291835
+      ],
+      "timestamp_us": 240000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        12.346420323325631,
+        11.883628432127281
+      ],
+      "right_feature": [
+        9.682208483599524,
+        10.092907436029535
+      ]
+    },
+    {
+      "frame": 3,
+      "case": "valid",
+      "target": [
+        0.7836628042128037,
+        0.682595153626893
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.7825743580111416,
+        0.6789405762525702
+      ],
+      "timestamp_us": 360000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        12.399454669393322,
+        12.895705521472394
+      ],
+      "right_feature": [
+        8.970085470085465,
+        12.231048805815163
+      ]
+    },
+    {
+      "frame": 4,
+      "case": "valid",
+      "target": [
+        0.7758063897255945,
+        0.7141080313964402
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.7802347644298084,
+        0.7097742165652174
+      ],
+      "timestamp_us": 480000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        12.549667178699437,
+        14.04557091653865
+      ],
+      "right_feature": [
+        8.611111111111114,
+        13.140092879256969
+      ]
+    },
+    {
+      "frame": 5,
+      "case": "valid",
+      "target": [
+        0.7649281827163542,
+        0.7362633607896395
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.7674493060578583,
+        0.7282139687976396
+      ],
+      "timestamp_us": 600000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        11.367331288343564,
+        14.898773006134974
+      ],
+      "right_feature": [
+        8.557275541795661,
+        13.767027863777088
+      ]
+    },
+    {
+      "frame": 6,
+      "case": "valid",
+      "target": [
+        0.7511473670974872,
+        0.7480928475989426
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.743768823627996,
+        0.7562276692361098
+      ],
+      "timestamp_us": 720000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        11.213942513942513,
+        15.839502689502694
+      ],
+      "right_feature": [
+        6.858632876476165,
+        14.48525989138868
+      ]
+    },
+    {
+      "frame": 7,
+      "case": "valid",
+      "target": [
+        0.7346149283687348,
+        0.7490794864866073
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.7394543257561097,
+        0.7498986697553671
+      ],
+      "timestamp_us": 840000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        10.624562302502355,
+        15.813946536851986
+      ],
+      "right_feature": [
+        6.974398758727702,
+        14.223041117145073
+      ]
+    },
+    {
+      "frame": 8,
+      "case": "valid",
+      "target": [
+        0.7155119993884443,
+        0.7391801565988239
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.7186459028851296,
+        0.7365528379149422
+      ],
+      "timestamp_us": 960000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        9.682551883166795,
+        15.363609189512346
+      ],
+      "right_feature": [
+        6.190190107050569,
+        13.762283130306393
+      ]
+    },
+    {
+      "frame": 9,
+      "case": "valid",
+      "target": [
+        0.6940478758440689,
+        0.7188275061539438
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.6874074597985274,
+        0.7222053214198005
+      ],
+      "timestamp_us": 1080000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        8.795809720075567,
+        14.317018718873427
+      ],
+      "right_feature": [
+        4.739588733367896,
+        13.584758942457228
+      ]
+    },
+    {
+      "frame": 10,
+      "case": "valid",
+      "target": [
+        0.6704577231648172,
+        0.6889110436392605
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.66451634207421,
+        0.686789656136585
+      ],
+      "timestamp_us": 1200000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        7.421659283868593,
+        13.601430417128093
+      ],
+      "right_feature": [
+        4.022557360144361,
+        12.053934400222104
+      ]
+    },
+    {
+      "frame": 11,
+      "case": "valid",
+      "target": [
+        0.645,
+        0.65073826202178
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.6560309138821756,
+        0.650080371824445
+      ],
+      "timestamp_us": 1320000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        5.917182662538693,
+        12.525197798417622
+      ],
+      "right_feature": [
+        4.624521072796938,
+        10.965900383141758
+      ]
+    },
+    {
+      "frame": 12,
+      "case": "valid",
+      "target": [
+        0.617953626491982,
+        0.6059774950315152
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.6179446644515902,
+        0.6014888539865484
+      ],
+      "timestamp_us": 1440000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        4.514919663351179,
+        10.118379665051435
+      ],
+      "right_feature": [
+        3.172678434382192,
+        9.82710838236548
+      ]
+    },
+    {
+      "frame": 13,
+      "case": "valid",
+      "target": [
+        0.5896149283687347,
+        0.5565850029719308
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.5817327039764969,
+        0.5637116479490911
+      ],
+      "timestamp_us": 1560000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        2.8711282711282706,
+        8.541698841698846
+      ],
+      "right_feature": [
+        1.916195856873827,
+        8.771357644239004
+      ]
+    },
+    {
+      "frame": 14,
+      "case": "valid",
+      "target": [
+        0.5602943903371502,
+        0.5047194747575036
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.5540043298282635,
+        0.49859101760396496
+      ],
+      "timestamp_us": 1680000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        1.6688181550250505,
+        6.523460064839377
+      ],
+      "right_feature": [
+        0.7929084643865423,
+        6.3440192089152845
+      ]
+    },
+    {
+      "frame": 15,
+      "case": "valid",
+      "target": [
+        0.5303132543476196,
+        0.45264768284962104
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.531695948664783,
+        0.4591801165624424
+      ],
+      "timestamp_us": 1800000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        0.26269120190804074,
+        5.506567722815532
+      ],
+      "right_feature": [
+        0.20341880341881335,
+        4.829572649572654
+      ]
+    },
+    {
+      "frame": 16,
+      "case": "valid",
+      "target": [
+        0.5,
+        0.4026454144228374
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.5072441083361995,
+        0.41373642803188937
+      ],
+      "timestamp_us": 1920000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        -1.720686123911932,
+        4.062724014336922
+      ],
+      "right_feature": [
+        0.017760617760615105,
+        3.4305877305877246
+      ]
+    },
+    {
+      "frame": 17,
+      "case": "valid",
+      "target": [
+        0.46968674565238056,
+        0.35689800854490805
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.47600832645219066,
+        0.3562821375857645
+      ],
+      "timestamp_us": 2040000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        -3.4324266529809364,
+        1.4916602514754942
+      ],
+      "right_feature": [
+        -0.6826489841026984,
+        2.0487545694125657
+      ]
+    },
+    {
+      "frame": 18,
+      "case": "left_blink",
+      "target": [
+        0.4397056096628499,
+        0.317404846373107
+      ],
+      "valid": false,
+      "held": true,
+      "gaze": [
+        0.47600832645219066,
+        0.3562821375857645
+      ],
+      "timestamp_us": 2160000,
+      "left_valid": false,
+      "right_valid": true,
+      "left_feature": null,
+      "right_feature": [
+        -1.8491696627289826,
+        0.5901386748844359
+      ]
+    },
+    {
+      "frame": 19,
+      "case": "left_blink",
+      "target": [
+        0.41038507163126525,
+        0.2858919686035598
+      ],
+      "valid": false,
+      "held": true,
+      "gaze": [
+        0.47600832645219066,
+        0.3562821375857645
+      ],
+      "timestamp_us": 2280000,
+      "left_valid": false,
+      "right_valid": true,
+      "left_feature": null,
+      "right_feature": [
+        -3.2687070462494177,
+        -0.3558741164673407
+      ]
+    },
+    {
+      "frame": 20,
+      "case": "left_blink",
+      "target": [
+        0.38204637350801796,
+        0.2637366392103605
+      ],
+      "valid": false,
+      "held": true,
+      "gaze": [
+        0.47600832645219066,
+        0.3562821375857645
+      ],
+      "timestamp_us": 2400000,
+      "left_valid": false,
+      "right_valid": true,
+      "left_feature": null,
+      "right_feature": [
+        -4.2493980048159585,
+        -1.5234050435288822
+      ]
+    },
+    {
+      "frame": 21,
+      "case": "left_blink",
+      "target": [
+        0.3550000000000001,
+        0.25190715240105743
+      ],
+      "valid": false,
+      "held": true,
+      "gaze": [
+        0.47600832645219066,
+        0.3562821375857645
+      ],
+      "timestamp_us": 2520000,
+      "left_valid": false,
+      "right_valid": true,
+      "left_feature": null,
+      "right_feature": [
+        -5.2661021298434605,
+        -1.610084680523478
+      ]
+    },
+    {
+      "frame": 22,
+      "case": "valid",
+      "target": [
+        0.32954227683518283,
+        0.2509205135133928
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.33309535522929434,
+        0.24557354366239584
+      ],
+      "timestamp_us": 2640000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        -9.87110079917504,
+        -2.05297757153906
+      ],
+      "right_feature": [
+        -6.146659797355312,
+        -1.9474497681607446
+      ]
+    },
+    {
+      "frame": 23,
+      "case": "valid",
+      "target": [
+        0.3059521241559312,
+        0.26081984340117614
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.31642949170463286,
+        0.2711737891982954
+      ],
+      "timestamp_us": 2760000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        -9.956582902599067,
+        -1.5580437332746797
+      ],
+      "right_feature": [
+        -7.24701772324471,
+        -0.9387355146557539
+      ]
+    },
+    {
+      "frame": 24,
+      "case": "valid",
+      "target": [
+        0.2844880006115557,
+        0.28117249384605625
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.2855285976183857,
+        0.28460671047347286
+      ],
+      "timestamp_us": 2880000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        -11.303914044512666,
+        -1.242133537989254
+      ],
+      "right_feature": [
+        -8.42879137798306,
+        -0.3652809853733672
+      ]
+    },
+    {
+      "frame": 25,
+      "case": "valid",
+      "target": [
+        0.2653850716312653,
+        0.31108895636073963
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.26753946010089363,
+        0.31406325656217104
+      ],
+      "timestamp_us": 3000000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        -11.780510718250909,
+        -0.7532240157144017
+      ],
+      "right_feature": [
+        -9.254626076575434,
+        0.9873369148119693
+      ]
+    },
+    {
+      "frame": 26,
+      "case": "valid",
+      "target": [
+        0.24885263290251286,
+        0.34926173797821997
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.25207386622600125,
+        0.3592490062489367
+      ],
+      "timestamp_us": 3120000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        -12.518007662835245,
+        1.1704980842911894
+      ],
+      "right_feature": [
+        -9.962109575012803,
+        2.2424475166410716
+      ]
+    },
+    {
+      "frame": 27,
+      "case": "valid",
+      "target": [
+        0.2350718172836458,
+        0.3940225049684848
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.2263674742175127,
+        0.4007451189670909
+      ],
+      "timestamp_us": 3240000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        -13.740130718954248,
+        2.280392156862746
+      ],
+      "right_feature": [
+        -10.817832436587238,
+        3.951618413186438
+      ]
+    },
+    {
+      "frame": 28,
+      "case": "valid",
+      "target": [
+        0.22419361027440549,
+        0.4434149970280693
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.2316997924812647,
+        0.43074639788652597
+      ],
+      "timestamp_us": 3360000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        -12.825632775632783,
+        3.1730158730158706
+      ],
+      "right_feature": [
+        -11.167602518291645,
+        4.900459418070447
+      ]
+    },
+    {
+      "frame": 29,
+      "case": "valid",
+      "target": [
+        0.2163371957871964,
+        0.4952805252424964
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.21831696568963266,
+        0.5038979757568391
+      ],
+      "timestamp_us": 3480000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        -12.46949443333581,
+        5.088326051001019
+      ],
+      "right_feature": [
+        -12.359108324625566,
+        7.633402995471954
+      ]
+    },
+    {
+      "frame": 30,
+      "case": "valid",
+      "target": [
+        0.2115886503432008,
+        0.547352317150379
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.2094200973367995,
+        0.551680459907839
+      ],
+      "timestamp_us": 3600000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        -13.038132295719848,
+        7.203501945525289
+      ],
+      "right_feature": [
+        -12.741664501602145,
+        8.928336364423657
+      ]
+    },
+    {
+      "frame": 31,
+      "case": "valid",
+      "target": [
+        0.21000000000000002,
+        0.5973545855771627
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.20515587199056845,
+        0.6006048988309656
+      ],
+      "timestamp_us": 3720000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        -12.806703039750587,
+        8.902961808261892
+      ],
+      "right_feature": [
+        -13.307553493168342,
+        10.469837587006964
+      ]
+    },
+    {
+      "frame": 32,
+      "case": "valid",
+      "target": [
+        0.21158865034320073,
+        0.643101991455092
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.21059391309383352,
+        0.650996280488783
+      ],
+      "timestamp_us": 3840000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        -12.582817337461307,
+        10.395510835913313
+      ],
+      "right_feature": [
+        -13.041118845063153,
+        12.403540431382652
+      ]
+    },
+    {
+      "frame": 33,
+      "case": "valid",
+      "target": [
+        0.21633719578719635,
+        0.682595153626893
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.22492502616467686,
+        0.6895351414459314
+      ],
+      "timestamp_us": 3960000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        -11.712608037066744,
+        11.46141851554843
+      ],
+      "right_feature": [
+        -12.630228380805747,
+        13.874390556838591
+      ]
+    },
+    {
+      "frame": 34,
+      "case": "valid",
+      "target": [
+        0.22419361027440549,
+        0.7141080313964402
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.21775596255618346,
+        0.7191623079798867
+      ],
+      "timestamp_us": 4080000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        -11.442118863049103,
+        12.324031007751941
+      ],
+      "right_feature": [
+        -13.382782475019212,
+        14.849730976172182
+      ]
+    },
+    {
+      "frame": 35,
+      "case": "valid",
+      "target": [
+        0.23507181728364568,
+        0.7362633607896395
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.23906307937193028,
+        0.7322115746829934
+      ],
+      "timestamp_us": 4200000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        -10.543143297380581,
+        13.015408320493066
+      ],
+      "right_feature": [
+        -12.60394265232975,
+        15.10983102918587
+      ]
+    },
+    {
+      "frame": 36,
+      "case": "valid",
+      "target": [
+        0.24885263290251275,
+        0.7480928475989426
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.25678844991027744,
+        0.7456139806186334
+      ],
+      "timestamp_us": 4320000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        -9.645940832473343,
+        13.890092879256969
+      ],
+      "right_feature": [
+        -12.153561253561264,
+        15.193675213675206
+      ]
+    },
+    {
+      "frame": 37,
+      "case": "valid",
+      "target": [
+        0.26538507163126523,
+        0.7490794864866073
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.2599890702472418,
+        0.7552928179897311
+      ],
+      "timestamp_us": 4440000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        -9.06127578436471,
+        13.774917663373202
+      ],
+      "right_feature": [
+        -12.271042471042477,
+        15.771042471042477
+      ]
+    },
+    {
+      "frame": 38,
+      "case": "valid",
+      "target": [
+        0.28448800061155566,
+        0.7391801565988239
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.2784474589474045,
+        0.7322265618966213
+      ],
+      "timestamp_us": 4560000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        -8.717288717288724,
+        13.195667095667105
+      ],
+      "right_feature": [
+        -11.200956529165595,
+        14.940430438124523
+      ]
+    },
+    {
+      "frame": 39,
+      "case": "valid",
+      "target": [
+        0.3059521241559311,
+        0.7188275061539439
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.3014094346772191,
+        0.7145722904767304
+      ],
+      "timestamp_us": 4680000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        -7.7997063061066285,
+        12.561925080350221
+      ],
+      "right_feature": [
+        -10.202402402402399,
+        14.388030888030883
+      ]
+    },
+    {
+      "frame": 40,
+      "case": "valid",
+      "target": [
+        0.3295422768351828,
+        0.6889110436392604
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.3293729395053552,
+        0.6848364834822072
+      ],
+      "timestamp_us": 4800000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        -6.889577416300895,
+        11.93652637920647
+      ],
+      "right_feature": [
+        -8.941028966709894,
+        13.134846519671427
+      ]
+    },
+    {
+      "frame": 41,
+      "case": "valid",
+      "target": [
+        0.35499999999999987,
+        0.6507382620217801
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.3530864760442117,
+        0.6531912436670231
+      ],
+      "timestamp_us": 4920000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        -5.978257147748664,
+        11.000599212463612
+      ],
+      "right_feature": [
+        -7.926755967714229,
+        11.965052378499053
+      ]
+    },
+    {
+      "frame": 42,
+      "case": "valid",
+      "target": [
+        0.38204637350801773,
+        0.6059774950315154
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.3842168310616506,
+        0.6051496426249718
+      ],
+      "timestamp_us": 5040000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        -5.346229396190964,
+        9.435092663762916
+      ],
+      "right_feature": [
+        -6.071748591909881,
+        10.464349718381975
+      ]
+    },
+    {
+      "frame": 43,
+      "case": "missing_glint",
+      "target": [
+        0.4103850716312652,
+        0.5565850029719308
+      ],
+      "valid": false,
+      "held": true,
+      "gaze": [
+        0.3842168310616506,
+        0.6051496426249718
+      ],
+      "timestamp_us": 5160000,
+      "left_valid": true,
+      "right_valid": false,
+      "left_feature": [
+        -4.353798925556404,
+        7.963545663852642
+      ],
+      "right_feature": null
+    },
+    {
+      "frame": 44,
+      "case": "missing_glint",
+      "target": [
+        0.43970560966284966,
+        0.5047194747575037
+      ],
+      "valid": false,
+      "held": true,
+      "gaze": [
+        0.3842168310616506,
+        0.6051496426249718
+      ],
+      "timestamp_us": 5280000,
+      "left_valid": true,
+      "right_valid": false,
+      "left_feature": [
+        -3.263076923076923,
+        6.424957264957271
+      ],
+      "right_feature": null
+    },
+    {
+      "frame": 45,
+      "case": "missing_glint",
+      "target": [
+        0.4696867456523803,
+        0.4526476828496212
+      ],
+      "valid": false,
+      "held": true,
+      "gaze": [
+        0.3842168310616506,
+        0.6051496426249718
+      ],
+      "timestamp_us": 5400000,
+      "left_valid": true,
+      "right_valid": false,
+      "left_feature": [
+        -2.6822747246476126,
+        4.374935798664609
+      ],
+      "right_feature": null
+    },
+    {
+      "frame": 46,
+      "case": "missing_glint",
+      "target": [
+        0.49999999999999994,
+        0.4026454144228374
+      ],
+      "valid": false,
+      "held": true,
+      "gaze": [
+        0.3842168310616506,
+        0.6051496426249718
+      ],
+      "timestamp_us": 5520000,
+      "left_valid": true,
+      "right_valid": false,
+      "left_feature": [
+        -0.8929946112394163,
+        2.8872209391839903
+      ],
+      "right_feature": null
+    },
+    {
+      "frame": 47,
+      "case": "valid",
+      "target": [
+        0.5303132543476193,
+        0.35689800854490805
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.5319846911331334,
+        0.3598977683022138
+      ],
+      "timestamp_us": 5640000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        -0.2509593246354598,
+        2.238893152553942
+      ],
+      "right_feature": [
+        0.6895752895752878,
+        1.455298155298152
+      ]
+    },
+    {
+      "frame": 48,
+      "case": "valid",
+      "target": [
+        0.56029439033715,
+        0.3174048463731071
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.5533009146939987,
+        0.3158766573082003
+      ],
+      "timestamp_us": 5760000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        -0.1254988364170515,
+        1.112575544406397
+      ],
+      "right_feature": [
+        2.1252035781132292,
+        -0.1383845013247722
+      ]
+    },
+    {
+      "frame": 49,
+      "case": "valid",
+      "target": [
+        0.5896149283687346,
+        0.2858919686035598
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.588759863381792,
+        0.2891015821393568
+      ],
+      "timestamp_us": 5880000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        1.3541185527328707,
+        0.40069284064664856
+      ],
+      "right_feature": [
+        3.5330769230769192,
+        -1.2011965811965766
+      ]
+    },
+    {
+      "frame": 50,
+      "case": "valid",
+      "target": [
+        0.6179536264919819,
+        0.26373663921036056
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.6211091868858607,
+        0.2650364933184145
+      ],
+      "timestamp_us": 6000000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        2.637269938650306,
+        -1.0245398773006116
+      ],
+      "right_feature": [
+        5.127216653816504,
+        -1.482181101687651
+      ]
+    },
+    {
+      "frame": 51,
+      "case": "valid",
+      "target": [
+        0.6449999999999998,
+        0.2519071524010575
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.6485823183067216,
+        0.2555295347888147
+      ],
+      "timestamp_us": 6120000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        3.2430074416217565,
+        -0.2895817295355343
+      ],
+      "right_feature": [
+        6.383191981495756,
+        -2.5138781804163486
+      ]
+    },
+    {
+      "frame": 52,
+      "case": "valid",
+      "target": [
+        0.6704577231648171,
+        0.2509205135133928
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.6578430487346671,
+        0.2455305783931047
+      ],
+      "timestamp_us": 6240000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        3.9520630029104638,
+        -0.8220338983050866
+      ],
+      "right_feature": [
+        6.555299931833673,
+        -2.7852760736196345
+      ]
+    },
+    {
+      "frame": 53,
+      "case": "valid",
+      "target": [
+        0.6940478758440687,
+        0.26081984340117614
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.702830389004886,
+        0.2629349313988582
+      ],
+      "timestamp_us": 6360000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        6.055555555555557,
+        -0.7211981566820285
+      ],
+      "right_feature": [
+        8.355606758832565,
+        -1.8018433179723488
+      ]
+    },
+    {
+      "frame": 54,
+      "case": "valid",
+      "target": [
+        0.7155119993884441,
+        0.28117249384605614
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.7064322156525835,
+        0.2829014508117384
+      ],
+      "timestamp_us": 6480000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        6.5538451012588865,
+        -0.30630815544608936
+      ],
+      "right_feature": [
+        8.278713629402759,
+        -0.9884294708184385
+      ]
+    },
+    {
+      "frame": 55,
+      "case": "valid",
+      "target": [
+        0.7346149283687347,
+        0.3110889563607396
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.7352762072378133,
+        0.31522671150924286
+      ],
+      "timestamp_us": 6600000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        7.544264819091609,
+        1.2626379266102106
+      ],
+      "right_feature": [
+        9.474732006125578,
+        -0.1754296409732916
+      ]
+    },
+    {
+      "frame": 56,
+      "case": "valid",
+      "target": [
+        0.7511473670974871,
+        0.3492617379782199
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.741437068490409,
+        0.3493777406089255
+      ],
+      "timestamp_us": 6720000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        7.938300051203285,
+        2.8287250384024603
+      ],
+      "right_feature": [
+        9.460097510905825,
+        0.6347190146266328
+      ]
+    },
+    {
+      "frame": 57,
+      "case": "valid",
+      "target": [
+        0.7649281827163541,
+        0.39402250496848457
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.7589461606689646,
+        0.38781137303999585
+      ],
+      "timestamp_us": 6840000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        9.134628493524204,
+        4.193263706300513
+      ],
+      "right_feature": [
+        9.739089589204895,
+        1.7966948501152942
+      ]
+    },
+    {
+      "frame": 58,
+      "case": "valid",
+      "target": [
+        0.7758063897255945,
+        0.4434149970280692
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.762957195821734,
+        0.43568313371489026
+      ],
+      "timestamp_us": 6960000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        9.871210180203263,
+        5.260184473481935
+      ],
+      "right_feature": [
+        9.568385937900956,
+        3.759686938670775
+      ]
+    },
+    {
+      "frame": 59,
+      "case": "valid",
+      "target": [
+        0.7836628042128035,
+        0.4952805252424963
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.7856820718762552,
+        0.493654592499715
+      ],
+      "timestamp_us": 7080000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        11.336448598130843,
+        7.069314641744555
+      ],
+      "right_feature": [
+        10.076436928858143,
+        5.770561106840887
+      ]
+    },
+    {
+      "frame": 60,
+      "case": "valid",
+      "target": [
+        0.7884113496567993,
+        0.5473523171503788
+      ],
+      "valid": true,
+      "held": false,
+      "gaze": [
+        0.7869646984005935,
+        0.5482804693366241
+      ],
+      "timestamp_us": 7200000,
+      "left_valid": true,
+      "right_valid": true,
+      "left_feature": [
+        11.861111111111114,
+        9.154024767801857
+      ],
+      "right_feature": [
+        9.620577400839537,
+        7.336631542876731
+      ]
+    }
+  ]
+}

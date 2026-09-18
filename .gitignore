@@ -31,3 +31,4 @@ __pycache__/
 /build/
 # Superseded local preview; the published diagram is eye_tracking_demo.png.
 /assets/synthetic_eye_tracking.png
+/.gallery-qa/

@@ -1,25 +1,35 @@
-# 眼动特征与双眼处理架构参考
+# Eye Tracking Reference · 眼动特征与双眼处理
 
-**Pupil–glint features · stereo state isolation · explicit calibration labels**
+从眼部像素检测瞳孔与双光斑，经双眼四维特征和九点标定，得到可逐帧检查的视线落点。
 
 [![Eye tracking checks](https://github.com/aixiaoxin0410/eye-tracking-reference/actions/workflows/ci.yml/badge.svg)](https://github.com/aixiaoxin0410/eye-tracking-reference/actions/workflows/ci.yml)
 
-把眼动处理拆成可检查的三个环节：从眼部 ROI 检测瞳孔与双光斑、生成双眼四维差分特征、通过九点标定映射到归一化屏幕坐标。配套 C++17 参考模块展示长期双 worker、每眼独立状态和按事件采样的标定接口。
+![逐帧眼动检测与标定落点回放](assets/eye_tracking_replay.gif)
 
-![Synthetic eye-tracking demonstration](assets/eye_tracking_demo.png)
+**合成数据回放。** 每帧实际运行像素检测和标定模型；绿色为新预测，黄色为眨眼或缺光斑时保留的旧落点。60 帧、7.2 秒是演示播放节奏，不是实测吞吐率。
 
-图中眼图、标定点和测试样本均由程序生成，标记为 **SYNTHETIC DEMO**。数值来自本仓库独立 Python 验证器的实际运行，不代表真实受试者精度、板端性能或原工程测量结果。
+## 检测过程与结果画廊
 
-## 可运行范围
+![像素检测分阶段：输入、阈值候选和检测结果](assets/pixel_detection_stages.png)
 
-| 内容 | 状态 | 边界 |
-| --- | --- | --- |
-| `demo/eye_demo.py` | 可直接运行 | NumPy/Pillow 合成眼图、像素检测、仿射标定与结果图；无相机和真实眼部数据 |
-| `cpp/include/` | 可编译、已验证 | 独立类型、标定采样器、双 worker 模板；检测器由调用方注入 |
-| `cpp/tests/test_reference.cpp` | 可运行 | 用带状态的计数检测器检查并发与接口行为，不测视觉算法 |
-| `integration/eye_tracking_graph.pbtxt` | Integration sketch | 缺少 Calculator 实现、BUILD 规则、相机和 ROI 上游，不能单独运行 |
+左右眼分别展示原始 ROI、阈值候选掩膜和检测几何。绿色标记瞳孔，橙色标记双光斑，蓝色连线对应 `pupil - mean(glints)` 特征。
 
-这是基于已整理的架构参考材料重新组织的公开示例。原检测器、完整时序滤波器、设备通信与训练实现不包含在仓库中。Python 像素检测器为独立编写的概念验证，不是原 C++ 检测器移植；C++ 基础模块也不宣称还原历史产品代码。
+![32 个独立测试目标的标定误差](assets/heldout_calibration_errors.png)
+
+90 对样本用于九点标定，另外 32 对目标用于独立验证。右上直接显示横纵残差，下方保留每个测试样本的误差，完整数值可在 [JSON 记录](assets/synthetic_metrics.json) 中核对。
+
+![正常帧、眨眼和缺失光斑的关键帧](assets/replay_keyframes.png)
+
+动画中的有效帧与两类失败帧。首个有效落点出现后，任一眼无效都显式返回 `valid=false, held=true`，不产生新的模型预测。
+
+<details>
+<summary>展开查看双眼检测与标定总览</summary>
+
+![合成眼动验证总览](assets/eye_tracking_demo.png)
+
+</details>
+
+画廊均标记 **SYNTHETIC DEMO**：所有眼图由程序生成，数值来自本仓库独立验证器，不代表真实受试者或设备实测结果。配套 C++17 模块展示双 worker、每眼独立状态和显式标定标签。
 
 ## 快速运行
 
@@ -41,17 +51,29 @@ python -m unittest discover -s tests -v
 
 无需 API Key、GPU、预训练权重或外部图片。默认种子为 `27`。
 
+重新生成完整画廊与 GIF（额外安装 Matplotlib 绘制定量图）：
+
+```bash
+python -m pip install -r requirements-gallery.txt
+python gallery.py
+```
+
+`gallery.py` 会重新生成输入并运行检测、标定、逐帧回放，输出来源、数值和文件 SHA-256 保存到 [`examples/gallery_manifest.json`](examples/gallery_manifest.json)。Windows / Ubuntu CI 都会生成并上传 PNG、GIF 和 JSON。
+
 主要输出：
 
 - [`assets/eye_tracking_demo.png`](assets/eye_tracking_demo.png)：双眼检测与标定结果总览。
 - [`assets/synthetic_metrics.json`](assets/synthetic_metrics.json)：生成口径、完整训练特征、回归权重、逐帧测试结果和失败处理。
 - [`examples/demo_manifest.json`](examples/demo_manifest.json)：数据来源和可重现命令。
+- [`examples/gallery_manifest.json`](examples/gallery_manifest.json)：图库记录、动画帧数与产物校验值。
+- [`assets/replay_frames.json`](assets/replay_frames.json)：60 帧的目标、双眼特征、预测和有效性状态。
 - `assets/synthetic_left_roi.png` / `synthetic_right_roi.png`：独立原始输入，可核对叠加结果。
 
 若想改变种子或将临时输出放在别处：
 
 ```bash
 python demo.py --seed 42 --output /tmp/eye-demo
+python gallery.py --seed 42 --output /tmp/eye-gallery
 ```
 
 ## 结果怎么读
@@ -114,6 +136,16 @@ ctest --test-dir build -C Release --output-on-failure
 生产级线程安全还需在目标平台运行 ThreadSanitizer 或等价工具；这里未给出此类验证结果。
 
 ## 接入真实处理链
+
+| 内容 | 状态 | 边界 |
+| --- | --- | --- |
+| `demo/eye_demo.py` | 可直接运行 | NumPy/Pillow 合成眼图、像素检测、仿射标定；无相机和真实眼部数据 |
+| `gallery.py` | 可直接运行 | 复现阶段图、定量误差图和逐帧 GIF；Matplotlib 仅用于绘图 |
+| `cpp/include/` | 可编译、已验证 | 独立类型、标定采样器、双 worker 模板；检测器由调用方注入 |
+| `cpp/tests/test_reference.cpp` | 可运行 | 用带状态的计数检测器检查并发与接口行为，不测视觉算法 |
+| `integration/eye_tracking_graph.pbtxt` | Integration sketch | 缺少 Calculator 实现、BUILD 规则、相机和 ROI 上游，不能单独运行 |
+
+这是基于已整理的架构参考材料重新组织的公开示例。原检测器、完整时序滤波器、设备通信与训练实现不包含在仓库中。Python 像素检测器为独立编写的概念验证，不是原 C++ 检测器移植；C++ 基础模块也不宣称还原历史产品代码。
 
 参见 [`integration/README.md`](integration/README.md)。需要由使用方提供检测器、Camera/FaceLandmark/EyeRoi 节点、模型持久化、滤波与设备通信；使用 MediaPipe 的两个独立 Calculator 时，直接让 executor 调度双眼，通常不必再嵌套本仓库的双 worker。
 
