@@ -1,0 +1,28 @@
+# INTEGRATION SKETCH ONLY. Calculator implementations/BUILD targets are not shipped.
+# Camera -> face landmarks -> eye ROI extraction is supplied by the integrator.
+# Supply both eye ROI packets at exactly the same monotonically increasing timestamp.
+input_stream: "left_eye_roi"
+input_stream: "right_eye_roi"
+input_side_packet: "calibration_model"
+output_stream: "gaze_point"
+
+node {
+  name: "left_pupil_glint"
+  calculator: "PupilGlintCalculator"
+  input_stream: "EYE_ROI:left_eye_roi"
+  output_stream: "EYE_FEATURE:left_eye_feature"
+}
+node {
+  name: "right_pupil_glint"
+  calculator: "PupilGlintCalculator"
+  input_stream: "EYE_ROI:right_eye_roi"
+  output_stream: "EYE_FEATURE:right_eye_feature"
+}
+node {
+  name: "gaze_solver"
+  calculator: "GazeSolverCalculator"
+  input_stream: "LEFT:left_eye_feature"
+  input_stream: "RIGHT:right_eye_feature"
+  input_side_packet: "MODEL:calibration_model"
+  output_stream: "GAZE:gaze_point"
+}

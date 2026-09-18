@@ -1,0 +1,28 @@
+{
+  "project": "eye-tracking",
+  "data_type": "SYNTHETIC DEMO",
+  "seed": 27,
+  "command": "python demo.py",
+  "generator": "Procedural grayscale eye ROIs with known pupil/glint coordinates",
+  "detector": "Independent NumPy pixel detector; no access to ground truth",
+  "evaluation": "90 calibration pairs, 32 held-out target pairs, 3 invalid-frame cases",
+  "artifacts": [
+    "assets/eye_tracking_demo.png",
+    "assets/synthetic_metrics.json",
+    "assets/synthetic_left_roi.png",
+    "assets/synthetic_right_roi.png"
+  ],
+  "metrics": {
+    "pupil_mean_error_px": 0.10540301207897865,
+    "heldout_gaze_rmse_normalized": 0.00820615741561742,
+    "heldout_gaze_p95_normalized": 0.013577326947489081,
+    "calibration_samples": 90,
+    "heldout_samples": 32,
+    "rejected_invalid_frames": 3
+  },
+  "excluded_claims": [
+    "real human eye accuracy",
+    "device FPS",
+    "original product measurements"
+  ]
+}
